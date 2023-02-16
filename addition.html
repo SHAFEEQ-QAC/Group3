@@ -1,0 +1,42 @@
+<html>
+ <script>
+    function doMaths(){
+        let A = num1.value
+        let B = num2.value
+        if (A==""){
+            alert("Frist Number is Missing")
+            num1.focus()
+        }else{
+
+            if(B==""){
+                alert("Second number is Missing")
+                num2.focus()          
+            }else{
+                result.value = parseInt(A) + parseInt(B)
+            }          
+        }
+    }
+ </script>
+<table bgcolor="green">
+    <tr>
+        <td> Frist Number </td>
+        <td> <input type="text" id="num1"></td>
+    </tr>
+
+    <tr>
+        <td> Second Number </td>
+        <td> <input type="text" id="num2"></td>
+    </tr>
+
+    <tr>
+        <td> Result: </td>
+        <td> <input type="text" id="result"></td>
+    </tr>
+</table>
+
+<br>
+<input 
+    type="button" 
+    value=" + "
+    onclick="doMaths()">
+</html>
